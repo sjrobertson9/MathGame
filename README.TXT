@@ -4,9 +4,9 @@ Tell the reader (someone who does not know anything about this project)
 all he/she needs to know. The comments should usually include at least:
 ------------------------------------------------------------------------
 
-PROJECT TITLE:
-PURPOSE OF PROJECT:
-VERSION or DATE:
-HOW TO START THIS PROJECT:
-AUTHORS:
+PROJECT TITLE: MathGame
+PURPOSE OF PROJECT: Simulate a simple game to teach basic addition and subtraction.
+VERSION or DATE: 12/20/16
+HOW TO START THIS PROJECT: 
+AUTHORS: Lisa Yoo, Emily Sine, Sarah Robertson, Joshua Sluzar
 USER INSTRUCTIONS:
