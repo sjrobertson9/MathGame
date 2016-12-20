@@ -1,33 +1,64 @@
-
 /**
- * Write a description of class ScoreKeeper here.
- * 
- * @author (your name) 
- * @version (a version number or a date)
+ * Keeps score of the game
+ * @author lisa.yoo
+ * @version 12.14.16
  */
-public class ScoreKeeper
+public class ScoreKeeper 
 {
-    // instance variables - replace the example below with your own
-    private int x;
-
-    /**
-     * Constructor for objects of class ScoreKeeper
-     */
-    public ScoreKeeper()
-    {
-        // initialise instance variables
-        x = 0;
-    }
-
-    /**
-     * An example of a method - replace this comment with your own
-     * 
-     * @param  y   a sample parameter for a method
-     * @return     the sum of x and y 
-     */
-    public int sampleMethod(int y)
-    {
-        // put your code here
-        return x + y;
-    }
+	private int score;
+	private int level;
+	private int numTrials;
+	private ProblemGenerator probGen;
+	private UserInteraction user;
+	
+	/*
+	 * Creates a scorekeeper object
+	 */
+	public ScoreKeeper()
+	{
+		score = 0;
+		level = 1;
+		numTrials = 0;
+	}
+	
+	/*
+	 * Returns the user's current score
+	 * @return The user's current score
+	 */
+	public int getScore()
+	{
+		return score;
+	}
+	
+	/*
+	 * Returns the user's current level
+	 * @return The user's current level
+	 */
+	public int getLevel()
+	{
+		return level;
+	}
+	
+	/*
+	 * Checks the answer of the user and returns a boolean
+	 * @return isCorrect A boolean
+	 */
+	public boolean checkAnswer()
+	{
+		if (probGen.getA() + probGen.getB() == user.getAnswer())
+		{
+			score++;
+			numTrials = 0;
+			return true;
+		}
+		else
+		{
+			numTrials = 1;
+			return false;
+		}
+	}
+	
+	/*
+	 * Based on the number of points, changes the level
+	 */
 }
