@@ -8,7 +8,7 @@ public class ProblemGenerator
 	private int a;
 	private int b;
 	
-	/**
+	/*
 	 * Creates a problem generator object
 	 */
 	public ProblemGenerator()
@@ -17,7 +17,25 @@ public class ProblemGenerator
 		b = 0;
 	}
 	
-	/**
+	/*
+	 * Returns a
+	 * @return a
+	 */
+	public int getA()
+	{
+		return a;
+	}
+	
+	/*
+	 * Returns b
+	 * @return b
+	 */
+	public int getB()
+	{
+		return b;
+	}
+	
+	/*
 	 * Generates and returns a level one problem
 	 * Problems only involve addition of numbers less than 10 whose sum is less than 10
 	 * @return problem 
@@ -36,7 +54,7 @@ public class ProblemGenerator
 		return a + " + " + b + " = ?";
 	}
 	
-	/**
+	/*
 	 * Generates and returns a level two problem
 	 * Problems only involve addition of one-digit numbers
 	 * @return problem
@@ -48,7 +66,7 @@ public class ProblemGenerator
 		return a + " + " + b + " = ?";
 	}
 	
-	/**
+	/*
 	 * Generates and returns a level three problem
 	 * Problems involve subtraction of one-digit numbers with a non-negative difference
 	 * @return problem
@@ -67,4 +85,5 @@ public class ProblemGenerator
 		return a + " - " + b + " = ?";
 	}
 }
+
 
