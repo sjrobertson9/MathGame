@@ -61,4 +61,17 @@ public class ScoreKeeper
 	/*
 	 * Based on the number of points, changes the level
 	 */
+	public void changeLevel()
+	{
+		if(level==1 && score == 5)
+		{
+			level +=;
+			score = 0;
+		}
+		else if(level == 2 && score == 5)
+		{
+			level +=;
+			score = 0;
+		}
+	}
 }
