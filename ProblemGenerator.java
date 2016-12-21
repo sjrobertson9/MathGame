@@ -5,8 +5,8 @@
  */
 public class ProblemGenerator 
 {
-	private int a;
-	private int b;
+	private int a; // the first number in the problem
+	private int b; // the second number in the problem
 	
 	/*
 	 * Creates a problem generator object
@@ -19,7 +19,7 @@ public class ProblemGenerator
 	
 	/*
 	 * Returns a
-	 * @return a
+	 * @return The first number in the generated problem
 	 */
 	public int getA()
 	{
@@ -28,7 +28,7 @@ public class ProblemGenerator
 	
 	/*
 	 * Returns b
-	 * @return b
+	 * @return The second number in the generated problem
 	 */
 	public int getB()
 	{
@@ -38,7 +38,7 @@ public class ProblemGenerator
 	/*
 	 * Generates and returns a level one problem
 	 * Problems only involve addition of numbers less than 10 whose sum is less than 10
-	 * @return problem 
+	 * @return The problem in the format a + b = ?
 	 */
 	public String levelOne()
 	{
@@ -57,7 +57,7 @@ public class ProblemGenerator
 	/*
 	 * Generates and returns a level two problem
 	 * Problems only involve addition of one-digit numbers
-	 * @return problem
+	 * @return The problem in the format a + b = ?
 	 */
 	public String levelTwo()
 	{
@@ -69,7 +69,7 @@ public class ProblemGenerator
 	/*
 	 * Generates and returns a level three problem
 	 * Problems involve subtraction of one-digit numbers with a non-negative difference
-	 * @return problem
+	 * @return The problem in the format a + b = ?
 	 */
 	public String levelThree()
 	{
