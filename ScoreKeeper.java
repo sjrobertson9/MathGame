@@ -65,12 +65,12 @@ public class ScoreKeeper
 	{
 		if(level==1 && score == 5)
 		{
-			level +=;
+			level++;
 			score = 0;
 		}
 		else if(level == 2 && score == 5)
 		{
-			level +=;
+			level++;
 			score = 0;
 		}
 	}
