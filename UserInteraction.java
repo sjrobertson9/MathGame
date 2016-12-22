@@ -29,7 +29,7 @@ public class UserInteraction
 			else
 			{
 				score.changeLevel(1);
-				System.out.println("Sorry, you lose. Type 'Y' and press enter to start over.");
+				System.out.println("Sorry, you lose.");
 			}
 		}
 		else if(score.checkAnswer())
@@ -43,14 +43,18 @@ public class UserInteraction
 			if(score.getLevel() == 1)
 			{
 				score.changeLevel(2);
+				System.out.println(problem.levelTwo());
 			}
 			else
+			{
 				score.changeLevel(3);
+				System.out.println(problem.levelThree());
+			}
 		}
 		else if(score.checkAnswer()&&score.getScore()==5&&score.getLevel()==3)
 		{
 			System.out.println("Congratulations, you've won the game!");
-			System.out.println("Type 'start over' and press 'enter' to start a new game.");
+			// System.out.println("Type 'start over' and press 'enter' to start a new game.");
 		}
 		
 		System.out.print("The answer is: "+getAnswer()+".");
