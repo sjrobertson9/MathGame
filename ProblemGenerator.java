@@ -69,7 +69,7 @@ public class ProblemGenerator
 	/*
 	 * Generates and returns a level three problem
 	 * Problems involve subtraction of one-digit numbers with a non-negative difference
-	 * @return The problem in the format a + b = ?
+	 * @return The problem in the format a - b = ?
 	 */
 	public String levelThree()
 	{
